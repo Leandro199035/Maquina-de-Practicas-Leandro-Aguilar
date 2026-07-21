@@ -15,6 +15,15 @@ La captura muestra la ejecución del comando `ls -l` en una terminal de Kali Lin
 * **`laboratorio.exe`:** Muestra permisos `-rw-rw-r--` bajo el usuario `leandro`, indicando que tiene privilegios de lectura y escritura (`rw-`), permitiendo modificar su contenido.
 * **`prueba.txt`:** Muestra permisos `-r--r--r--` bajo el usuario `root`, lo que indica que es un archivo de **solo lectura** (`r--`) para todos los usuarios, restringiendo cualquier intento de modificación o escritura.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_45_40" src="https://github.com/user-attachments/assets/b1005182-dce6-4872-a5e3-922ace507db5" />
+
+### Actualización Completa del Sistema (`sudo apt full-upgrade`)
+
+La captura demuestra que el sistema operativo Kali Linux se encuentra **completamente actualizado y al día** mediante los siguientes elementos:
+
+* **Ejecución del Comando:** Se utilizó `sudo apt full-upgrade`, comando encargado de actualizar todos los paquetes e instalar las dependencias necesarias.
+* **Resumen de Estado:** La línea final de la terminal confirma el estado con el mensaje: 
+  `Actualizando: 0, Instalando 0, Eliminando: 0, no actualizando: 0`. Esto certifica que no hay ningún paquete pendiente de actualización.
+* **Relevancia en Ciberseguridad:** Mantener el sistema completamente actualizado es fundamental dentro del proceso de *hardening* (bastionado), ya que elimina vulnerabilidades conocidas (CVEs) en el software y herramientas del sistema.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_28_43" src="https://github.com/user-attachments/assets/df16d53f-0112-4ab0-878f-253711bd762d" />
 <img width="1894" height="1078" alt="620603126-51d56292-e39b-40a2-9a26-2a369cb26adf" src="https://github.com/user-attachments/assets/b453e500-30d1-4866-9c25-407b0ab2e7a3" />
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_21_27_47" src="https://github.com/user-attachments/assets/99175ba2-7244-44e1-af08-885f041fcd25" />
