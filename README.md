@@ -33,4 +33,12 @@ La captura muestra la ventana de configuración de **VirtualBox** para la máqui
 * **Aislamiento del Entorno (*Sandboxing*):** Esta configuración desconecta la máquina virtual de la red local física e Internet, creando una red privada accesible únicamente entre la máquina anfitriona (*Host*) y las VMs del laboratorio.
 * **Seguridad y Control:** Previene la fuga no deseada de tráfico de pruebas, evita ataques o escaneos hacia la red real y protege al sistema contra posibles amenazas externas procedentes de Internet durante las prácticas de ciberseguridad.
 <img width="1894" height="1078" alt="620603126-51d56292-e39b-40a2-9a26-2a369cb26adf" src="https://github.com/user-attachments/assets/b453e500-30d1-4866-9c25-407b0ab2e7a3" />
+
+### Gestión de Usuarios y Principio de Menor Privilegio (`groups`)
+
+La captura muestra la ejecución del comando `groups leandro UsuarioSeguro` en la terminal de Kali Linux, evidenciando la segregación de cuentas e implementación del **principio de menor privilegio**:
+
+* **`leandro` (Usuario Administrador):** Pertenece al grupo `sudo` y a múltiples grupos del sistema (`adm`, `netdev`, `wireshark`, etc.), lo que le otorga facultades para ejecutar tareas administrativas y de configuración avanzada.
+* **`UsuarioSeguro` (Usuario Sin Privilegios):** Pertenece únicamente al grupo básico `users`, careciendo de permisos de superusuario (`sudo`) o acceso a configuraciones críticas.
+* **Beneficio en Ciberseguridad:** Mantener una cuenta con privilegios restringidos previene que software malicioso o comandos no autorizados realicen cambios perjudiciales en el sistema, limitando el alcance de cualquier posible vulnerabilidad.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_21_27_47" src="https://github.com/user-attachments/assets/99175ba2-7244-44e1-af08-885f041fcd25" />
