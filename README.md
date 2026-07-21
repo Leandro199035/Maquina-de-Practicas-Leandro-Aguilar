@@ -16,7 +16,7 @@ La captura muestra la ejecución del comando `ls -l` en una terminal de Kali Lin
 * **`prueba.txt`:** Muestra permisos `-r--r--r--` bajo el usuario `root`, lo que indica que es un archivo de **solo lectura** (`r--`) para todos los usuarios, restringiendo cualquier intento de modificación o escritura.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_45_40" src="https://github.com/user-attachments/assets/b1005182-dce6-4872-a5e3-922ace507db5" />
 
-### Actualización Completa del Sistema (`sudo apt full-upgrade`)
+### Actualización Completa del Sistema Linux (`Kali`)
 
 La captura demuestra que el sistema operativo Kali Linux se encuentra **completamente actualizado y al día** mediante los siguientes elementos:
 
