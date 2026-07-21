@@ -1,6 +1,6 @@
 ### Descripción y Justificación Técnica
 
-Las capturas muestran la instantánea (*snapshot*) **"Clean Install - Hardening applied"** en **VirtualBox** aplicada tanto a la máquina virtual de Linux ("Kali") como a la de Windows ("WindowsPrueba"). Su propósito en el trabajo práctico comprende:
+Las capturas muestran la instantánea (*snapshot*) **"Clean Install - Hardening applied"** en **VirtualBox** aplicada tanto a la máquina virtual de Linux ("Kali") como a la de Windows ("WindowsPrueba). Su propósito en el trabajo práctico comprende:
 
 * **Clean Install (Instalación Limpia):** Garantiza un entorno base sin *bloatware* ni configuraciones previas que alteren las pruebas en ambos sistemas.
 * **Hardening (Bastionado):** Confirma la aplicación de políticas de seguridad (cierre de puertos, desactivación de servicios no esenciales y parches) para reducir la superficie de ataque.
