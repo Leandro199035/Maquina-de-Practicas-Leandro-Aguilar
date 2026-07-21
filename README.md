@@ -35,13 +35,14 @@ Mantener tanto el sistema operativo atacante (Kali Linux) como los sistemas clie
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_28_43" src="https://github.com/user-attachments/assets/df16d53f-0112-4ab0-878f-253711bd762d" />
 <img width="1920" height="974" alt="VirtualBox_WindowsPrueba_21_07_2026_20_32_07" src="https://github.com/user-attachments/assets/a70afbd6-3ee5-42e5-a2d5-03c0bbdfa36d" />
 
-### Configuración de Red: Adaptador Sólo Anfitrión (*Host-Only*)
+### Configuración de Red: Adaptador Sólo Anfitrión (*Host-Only*) en Kali Linux y Windows
 
-La captura muestra la ventana de configuración de **VirtualBox** para la máquina virtual `Kali`, donde se ha seleccionado el modo de red **"Adaptador sólo anfitrión"** (*VirtualBox Host-Only Ethernet Adapter*):
+La evidencia muestra las ventanas de configuración de **VirtualBox** tanto para la máquina virtual `Kali` como para la máquina virtual `WindowsPrueba`, donde en ambos casos se ha seleccionado el modo de red **"Adaptador sólo anfitrión"** (*VirtualBox Host-Only Ethernet Adapter*):
 
-* **Aislamiento del Entorno (*Sandboxing*):** Esta configuración desconecta la máquina virtual de la red local física e Internet, creando una red privada accesible únicamente entre la máquina anfitriona (*Host*) y las VMs del laboratorio.
-* **Seguridad y Control:** Previene la fuga no deseada de tráfico de pruebas, evita ataques o escaneos hacia la red real y protege al sistema contra posibles amenazas externas procedentes de Internet durante las prácticas de ciberseguridad.
+* **Aislamiento del Entorno (*Sandboxing*):** Esta configuración desconecta ambas máquinas virtuales de la red local física e Internet, estableciendo un segmento de red privado en el que únicamente pueden comunicarse la máquina anfitriona (*Host*) y las VMs del laboratorio entre sí.
+* **Seguridad y Control:** Previene la fuga no deseada de tráfico de pruebas, evita ataques o escaneos accidentales hacia la red real y protege a todo el sistema contra posibles amenazas externas procedentes de Internet durante las prácticas de ciberseguridad.
 <img width="1894" height="1078" alt="620603126-51d56292-e39b-40a2-9a26-2a369cb26adf" src="https://github.com/user-attachments/assets/b453e500-30d1-4866-9c25-407b0ab2e7a3" />
+<img width="1895" height="1080" alt="Sin título" src="https://github.com/user-attachments/assets/66c2e0ba-9208-45ae-8893-a0b25a064959" />
 
 ### Gestión de Usuarios y Principio de Menor Privilegio (`groups`)
 
