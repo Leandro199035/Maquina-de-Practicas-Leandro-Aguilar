@@ -16,15 +16,24 @@ La captura muestra la ejecución del comando `ls -l` en una terminal de Kali Lin
 * **`prueba.txt`:** Muestra permisos `-r--r--r--` bajo el usuario `root`, lo que indica que es un archivo de **solo lectura** (`r--`) para todos los usuarios, restringiendo cualquier intento de modificación o escritura.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_45_40" src="https://github.com/user-attachments/assets/b1005182-dce6-4872-a5e3-922ace507db5" />
 
-### Actualización Completa del Sistema Linux (`Kali`)
+### Actualización Completa de los Sistemas (Kali Linux y Windows 10)
 
-La captura demuestra que el sistema operativo Kali Linux se encuentra **completamente actualizado y al día** mediante los siguientes elementos:
+La evidencia muestra que ambos sistemas operativos se encuentran **completamente actualizados y al día**:
 
+#### 1. Estado de Actualización en Kali Linux
 * **Ejecución del Comando:** Se utilizó `sudo apt full-upgrade`, comando encargado de actualizar todos los paquetes e instalar las dependencias necesarias.
-* **Resumen de Estado:** La línea final de la terminal confirma el estado con el mensaje: 
-  `Actualizando: 0, Instalando 0, Eliminando: 0, no actualizando: 0`. Esto certifica que no hay ningún paquete pendiente de actualización.
-* **Relevancia en Ciberseguridad:** Mantener el sistema completamente actualizado es fundamental dentro del proceso de *hardening* (bastionado), ya que elimina vulnerabilidades conocidas (CVEs) en el software y herramientas del sistema.
+* **Resumen de Estado:** La línea final de la terminal confirma el estado con el mensaje: `Actualizando: 0, Instalando 0, Eliminando: 0, no actualizando: 0`, certificando que no existe ningún paquete pendiente de actualización.
+
+#### 2. Estado de Actualización en Windows 10
+* **Historial de Windows Update:** En la ventana de configuración (*Ver historial de actualizaciones*) se aprecia que la versión **Windows 10 Version 22H2** cuenta con la instalación exitosa de sus parches de seguridad y actualizaciones acumulativas de calidad.
+* **Confirmación de Parches:** Se verifica la aplicación de parches acumulativos recientes (como *KB5071959* y *KB5072653*) marcados como **"Instalado correctamente el 21/7/2026"**, garantizando la integración de las últimas definiciones de seguridad del sistema base.
+
+---
+
+#### Relevancia en Ciberseguridad
+Mantener tanto el sistema operativo atacante (Kali Linux) como los sistemas cliente/servidor (Windows 10) completamente actualizados es fundamental dentro del proceso de **hardening** (bastionado). Esto reduce la superficie de ataque al eliminar vulnerabilidades conocidas (CVEs) en el software, librerías y componentes centrales del sistema.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_28_43" src="https://github.com/user-attachments/assets/df16d53f-0112-4ab0-878f-253711bd762d" />
+<img width="1920" height="974" alt="VirtualBox_WindowsPrueba_21_07_2026_20_32_07" src="https://github.com/user-attachments/assets/a70afbd6-3ee5-42e5-a2d5-03c0bbdfa36d" />
 
 ### Configuración de Red: Adaptador Sólo Anfitrión (*Host-Only*)
 
