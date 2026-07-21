@@ -44,11 +44,24 @@ La evidencia muestra las ventanas de configuración de **VirtualBox** tanto para
 <img width="1894" height="1078" alt="620603126-51d56292-e39b-40a2-9a26-2a369cb26adf" src="https://github.com/user-attachments/assets/b453e500-30d1-4866-9c25-407b0ab2e7a3" />
 <img width="1895" height="1080" alt="Sin título" src="https://github.com/user-attachments/assets/66c2e0ba-9208-45ae-8893-a0b25a064959" />
 
-### Gestión de Usuarios y Principio de Menor Privilegio (`groups`)
+### Gestión de Usuarios y Principio de Menor Privilegio (Kali Linux y Windows)
 
-La captura muestra la ejecución del comando `groups leandro UsuarioSeguro` en la terminal de Kali Linux, evidenciando la segregación de cuentas e implementación del **principio de menor privilegio**:
+Las capturas demuestran la creación y segregación de cuentas bajo el **principio de menor privilegio** en ambos sistemas operativos:
 
-* **`leandro` (Usuario Administrador):** Pertenece al grupo `sudo` y a múltiples grupos del sistema (`adm`, `netdev`, `wireshark`, etc.), lo que le otorga facultades para ejecutar tareas administrativas y de configuración avanzada.
-* **`UsuarioSeguro` (Usuario Sin Privilegios):** Pertenece únicamente al grupo básico `users`, careciendo de permisos de superusuario (`sudo`) o acceso a configuraciones críticas.
-* **Beneficio en Ciberseguridad:** Mantener una cuenta con privilegios restringidos previene que software malicioso o comandos no autorizados realicen cambios perjudiciales en el sistema, limitando el alcance de cualquier posible vulnerabilidad.
+#### 1. Verificación en Kali Linux (`groups`)
+A través del comando `groups leandro UsuarioSeguro`, se valida la asignación de grupos en el entorno Linux:
+* **`leandro` (Cuenta Administrativa):** Pertenece al grupo `sudo` y a múltiples grupos del sistema (`adm`, `netdev`, `wireshark`, etc.), lo que le otorga facultades para ejecutar tareas de administración y configuración avanzada.
+* **`UsuarioSeguro` (Cuenta Estándar):** Pertenece únicamente al grupo `users`, careciendo de permisos de superusuario (`sudo`) o acceso a archivos críticos del sistema.
+
+#### 2. Verificación en Windows 10 (`net user`)
+A través del símbolo del sistema (CMD), la ejecución del comando `net user` en la máquina `WINDOWSPRUEBA` evidencia la misma estructura de cuentas:
+* **`Leandro`:** Cuenta principal de usuario configurada para tareas de administración del sistema.
+* **`UsuarioSeguro`:** Cuenta estándar configurada para operaciones habituales sin privilegios elevados (evitando el uso del rol de Administrador para tareas diarias).
+
+---
+
+#### Beneficio en Ciberseguridad
+Mantener una cuenta restringida como `UsuarioSeguro` para el uso diario previene que software malicioso o ejecuciones no autorizadas realicen cambios perjudiciales a nivel de sistema base. Esto reduce significativamente la superficie de impacto frente a un eventual compromiso de la máquina.
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_21_27_47" src="https://github.com/user-attachments/assets/99175ba2-7244-44e1-af08-885f041fcd25" />
+<img width="1920" height="974" alt="VirtualBox_WindowsPrueba_21_07_2026_20_41_24" src="https://github.com/user-attachments/assets/4df5591f-022e-4c0f-8c7d-fd7c612b0e02" />
+
