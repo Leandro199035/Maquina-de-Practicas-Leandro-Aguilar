@@ -1,6 +1,6 @@
 ### Descripción y Justificación Técnica
 
-La captura muestra la instantánea (*snapshot*) **"Clean Install - Hardening applied"** en **VirtualBox** sobre la máquina virtual WindowsPrueba. Su propósito en el trabajo práctico comprende:
+La captura muestra la instantánea (*snapshot*) **"Clean Install - Hardening applied"** en **VirtualBox** sobre la máquina virtual "WindowsPrueba". Su propósito en el trabajo práctico comprende:
 
 * **Clean Install (Instalación Limpia):** Garantiza un entorno base sin *bloatware* ni configuraciones previas que alteren las pruebas.
 * **Hardening (Bastionado):** Confirma la aplicación de políticas de seguridad (cierre de puertos, desactivación de servicios no esenciales y parches) para reducir la superficie de ataque.
