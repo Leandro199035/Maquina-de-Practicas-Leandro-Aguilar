@@ -1,3 +1,10 @@
+### Descripción y Justificación Técnica
+
+La captura muestra la instantánea (*snapshot*) **"Clean Install - Hardening applied"** en **VirtualBox** sobre la máquina virtual `WindowsPrueba`. Su propósito en el trabajo práctico comprende:
+
+* **Clean Install (Instalación Limpia):** Garantiza un entorno base sin *bloatware* ni configuraciones previas que alteren las pruebas.
+* **Hardening (Bastionado):** Confirma la aplicación de políticas de seguridad (cierre de puertos, desactivación de servicios no esenciales y parches) para reducir la superficie de ataque.
+* **Punto de Restauración (*Baseline*):** Funciona como línea base para revertir el sistema a un estado seguro e inalterado en segundos si la máquina se compromete durante los ensayos de ciberseguridad.
 <img width="1755" height="1076" alt="Sin título" src="https://github.com/user-attachments/assets/4ef328e1-50e5-43da-a162-85e40a4d9dde" />
 <img width="1726" height="1077" alt="Sin título" src="https://github.com/user-attachments/assets/695b9e85-6d63-422a-a461-b5c849e07afe" />
 <img width="1920" height="974" alt="VirtualBox_Kali_20_07_2026_22_45_40" src="https://github.com/user-attachments/assets/b1005182-dce6-4872-a5e3-922ace507db5" />
